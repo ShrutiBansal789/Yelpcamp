@@ -1,82 +1,119 @@
-YelpCamp
+# YelpCamp
 
 ![](/images/1.png)
 
-Features
-Authentication:
+[![Known Vulnerabilities](https://snyk.io/test/github/lucasweng/yelp-camp/badge.svg)](https://snyk.io/test/github/lucasweng/yelp-camp)
+[![NSP Status](https://nodesecurity.io/orgs/webdevprojects/projects/e3247e54-2256-44ff-9c8a-e4e087bd49fa/badge)](https://nodesecurity.io/orgs/webdevprojects/projects/e3247e54-2256-44ff-9c8a-e4e087bd49fa)
 
-User login with username and password
+> A Node.js web application project from the Udemy course - [The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/the-web-developer-bootcamp/)
 
-Admin sign-up with admin code
+## Live Demo
 
-Authorization:
+To see the app in action, go to [https://yelpcamp--demo.herokuapp.com/](https://yelpcamp--demo.herokuapp.com/)
 
-One cannot manage posts and view user profile without being authenticated
+## Features
 
-One cannot edit or delete posts and comments created by other users
+* Authentication:
+  
+  * User login with username and password
 
-Admin can manage all posts and comments
+  * Admin sign-up with admin code
 
-Manage campground posts with basic functionalities:
+* Authorization:
 
-Create, edit and delete posts and comments
+  * One cannot manage posts and view user profile without being authenticated
 
-Upload campground photos
+  * One cannot edit or delete posts and comments created by other users
 
-Display campground location on Google Maps
+  * Admin can manage all posts and comments
 
-Search existing campgrounds
+* Manage campground posts with basic functionalities:
 
-Manage user account with basic functionalities:
+  * Create, edit and delete posts and comments
 
-Password reset via email confirmation (disabled)
+  * Upload campground photos
 
-Profile page setup with sign-up
+  * Display campground location on Google Maps
+  
+  * Search existing campgrounds
 
-Flash messages responding to users' interaction with the app
+* Manage user account with basic functionalities:
 
-Responsive web design
+  * ~~Password reset via email confirmation~~ (disabled)
 
-Custom Enhancements
-Update campground photos when editing campgrounds
+  * Profile page setup with sign-up
 
-Update personal information on profile page
+* Flash messages responding to users' interaction with the app
 
-Improve image load time on the landing page using Cloudinary
+* Responsive web design
 
-Use Helmet to strengthen security
+### Custom Enhancements
 
-Getting Started
-This app contains API secrets and passwords that have been hidden deliberately, so the app cannot be run with its features on your local machine. However, feel free to clone this repository if necessary.
+* Update campground photos when editing campgrounds
 
-Clone or download this repository
+* Update personal information on profile page
+
+* Improve image load time on the landing page using Cloudinary
+
+* Use Helmet to strengthen security
+ 
+## Getting Started
+
+> This app contains API secrets and passwords that have been hidden deliberately, so the app cannot be run with its features on your local machine. However, feel free to clone this repository if necessary.
+
+### Clone or download this repository
+
+```sh
 git clone https://github.com/lucasweng/yelp-camp.git
-Install dependencies
+```
+
+### Install dependencies
+
+```sh
 npm install
+```
+
 or
 
+```sh
 yarn install
-Comments in code
+```
+
+### Comments in code
+
 Some comments in the source code are course notes and therefore might not seem necessary from a developer's point of view.
 
-Built with
-Front-end
-ejs
-Google Maps APIs
-Bootstrap
-Back-end
-express
-mongoDB
-mongoose
-async
-crypto
-helmet
-passport
-passport-local
-express-session
-method-override
-nodemailer
-moment
-cloudinary
-geocoder
-connect-flash
+## Built with
+
+### Front-end
+
+* [ejs](http://ejs.co/)
+* [Google Maps APIs](https://developers.google.com/maps/)
+* [Bootstrap](https://getbootstrap.com/docs/3.3/)
+
+### Back-end
+
+* [express](https://expressjs.com/)
+* [mongoDB](https://www.mongodb.com/)
+* [mongoose](http://mongoosejs.com/)
+* [async](http://caolan.github.io/async/)
+* [crypto](https://nodejs.org/api/crypto.html#crypto_crypto)
+* [helmet](https://helmetjs.github.io/)
+* [passport](http://www.passportjs.org/)
+* [passport-local](https://github.com/jaredhanson/passport-local#passport-local)
+* [express-session](https://github.com/expressjs/session#express-session)
+* [method-override](https://github.com/expressjs/method-override#method-override)
+* [nodemailer](https://nodemailer.com/about/)
+* [moment](https://momentjs.com/)
+* [cloudinary](https://cloudinary.com/)
+* [geocoder](https://github.com/wyattdanger/geocoder#geocoder)
+* [connect-flash](https://github.com/jaredhanson/connect-flash#connect-flash)
+
+### Platforms
+
+* [Cloudinary](https://cloudinary.com/)
+* [Heroku](https://www.heroku.com/)
+* [Cloud9](https://aws.amazon.com/cloud9/?origin=c9io)
+## License
+
+#### [MIT](./LICENSE)
