@@ -1,66 +1,82 @@
+YelpCamp
 
+![](/images/1.png)
 
-#Auth Pt. 3 : LOGIN
-	*Add Login routes
-	*Add login template
+Features
+Authentication:
 
-#Auth pt. 4 : Logout/ Navbar
-	*Add logout route
-	*Prevent user from adding a comment if not signed in
-	*Add links to navbar
+User login with username and password
 
-#Auth pt. 5 : Show/Hide Links
-	*Show/ hide links in navbar correctly
+Admin sign-up with admin code
 
-#Refactor the Routes
-	*Use Express router to reorganise all routes
+Authorization:
 
-#Users + Comments
-	*Associate users and comments
-	*Save author's name to a comment automatically
+One cannot manage posts and view user profile without being authenticated
 
-#Users + Campgrounds
-	*Prevent an unauthenticated user from creating a campground
-	*Save username+id to newly created campground
+One cannot edit or delete posts and comments created by other users
 
-#Editing Campgrounds
-	*Add Method-Override
-	*Add Edit Route for campgrounds
-	*Add link to Edit Page
-	*Add Update Route
-	*Fix $set problem
+Admin can manage all posts and comments
 
-#Deleting Campgrounds
-	*Add Destroy Route
-	*Add Delete button
+Manage campground posts with basic functionalities:
 
-#Authorization PArt-1: Campgrounds
-	*User can  only edit his/her campgrounds
-	*User can only delete his/her campgrounds
-	*Hide/Show edit and delete buttons
+Create, edit and delete posts and comments
 
-#Editing Comments
-	*Add EDIT routefor comments
-	*Add EDIT BUTTON
-	*Add UPDATE route
+Upload campground photos
 
-Campground Edit Route: <!--/campgrounds/:id/edit -->
-Comment Edit Route: <!--/campgrounds/:id/comments/:comment_id/edit -->
+Display campground location on Google Maps
 
-#Deleting Comments
-	*Add Destroy route
-	*Add Delete button
+Search existing campgrounds
 
-Campground Delete Route: <!--/campgrounds/:id -->
-Comment Delete Route: <!-- /campgrounds/:id/comments/:comment_id --> 
+Manage user account with basic functionalities:
 
-#Authorization Part-2: Comments
-	*User can only ediy his/her commments
-	*User can only delete his/her comments
-	*Hide/show edit and delete buttons
-	*Refactor MIDDLEWARE
+Password reset via email confirmation (disabled)
 
-#Adding in Flash!
-	*Demo working version
-	*Install and configure connect-flash
-	*Add bootstrap alerts to header
+Profile page setup with sign-up
+
+Flash messages responding to users' interaction with the app
+
+Responsive web design
+
+Custom Enhancements
+Update campground photos when editing campgrounds
+
+Update personal information on profile page
+
+Improve image load time on the landing page using Cloudinary
+
+Use Helmet to strengthen security
+
+Getting Started
+This app contains API secrets and passwords that have been hidden deliberately, so the app cannot be run with its features on your local machine. However, feel free to clone this repository if necessary.
+
+Clone or download this repository
+git clone https://github.com/lucasweng/yelp-camp.git
+Install dependencies
+npm install
+or
+
+yarn install
+Comments in code
+Some comments in the source code are course notes and therefore might not seem necessary from a developer's point of view.
+
+Built with
+Front-end
+ejs
+Google Maps APIs
+Bootstrap
+Back-end
+express
+mongoDB
+mongoose
+async
+crypto
+helmet
+passport
+passport-local
+express-session
+method-override
+nodemailer
+moment
+cloudinary
+geocoder
+connect-flash
