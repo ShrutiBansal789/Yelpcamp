@@ -11,6 +11,8 @@
 
 To see the app in action, go to [https://yelpcamp--demo.herokuapp.com/](https://yelpcamp--demo.herokuapp.com/)
 
+![](/images/3.png)
+
 ## Features
 
 * Authentication:
